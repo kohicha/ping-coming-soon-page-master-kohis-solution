@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/dd8d557fb2.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .svgcolor{filter: invert(41%) sepia(99%) saturate(605%) hue-rotate(194deg) brightness(95%) contrast(100%);}
+  </style>
+</head>
+<body>
+  <main class="min-h-screen grid place-content-center font-LibreFranklin">
+    <div class="flex flex-col items-center gap-8 justify-around p-16">
+      <img src="images/logo.svg" alt="">
+      <div class="flex flex-col text-center gap-4">
+        <span class="text-6xl font-light text-Gray">We are launching <span class="font-bold text-VeryDarkBlue">soon!</span></span>
+        <span class="text-2xl text-VeryDarkBlue">
+          Subscribe and get notified
+        </span>
+      </div>
+      
+      <form name="form1" class=" text-lg flex flex-col" action="#" id="form">
+        <div class="flex md:flex-row flex-col gap-4">
+          <input type="text1" placeholder="Your email address..." class="w-[32rem] border px-8 py-4 rounded-full border-PaleBlue" name="text1">
+          <input type="submit" value="Notify Me" class="bg-Blue p-4 px-8 w-full md:w-[14rem] rounded-full font-semibold text-white" onclick="ValidateEmail(document.form1.text1)"></input>
+        </div>
+        <span class="errortext hidden text-LightRed pl:0 md:text-start text-center md:pl-8 text-sm">
+          Please provide a valid email address
+        </span>
+        
+      </form>
+      <img src="images/illustration-dashboard.png" alt="" class="max-w-3xl">
+      <div class="flex flex-col items-center gap-4">
+        <div class=" flex gap-4 text-Blue">
+          <span class="border inline-flex justify-center items-center hover:text-white hover:bg-Blue transition-all duration-300 ease-in-out rounded-full w-10 h-10">
+            <i class="fa-brands fa-facebook-f"></i>
+          </span>
+          <span class="border inline-flex justify-center items-center hover:text-white hover:bg-Blue transition-all duration-300 ease-in-out rounded-full w-10 h-10">
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+          <span class="border inline-flex justify-center items-center hover:text-white hover:bg-Blue transition-all duration-300 ease-in-out rounded-full w-10 h-10">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          
+        </div>
+        <span class="text-sm text-Gray">
+          &copy; Copyright Ping. All rights reserved.
+        </span>
+        
+      </div>
+      
+    </div>
+    
+  
+  </main>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
